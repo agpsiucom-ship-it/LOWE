@@ -47,12 +47,14 @@
     return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + text;
   }
 
+  var DEFAULT_WA_MESSAGE =
+    "Olá! Gostaria de agendar uma avaliação para o Ultraformer MPT com a Dra. Mariana Zahdi.";
+
   document.querySelectorAll(".js-whatsapp-cta").forEach(function (link) {
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      var defaultMessage =
-        "Olá! Gostaria de agendar uma consulta com a Dra. Mariana Zahdi.";
-      window.open(buildWhatsappUrl(defaultMessage), "_blank", "noopener");
+      var message = link.getAttribute("data-wa-message") || DEFAULT_WA_MESSAGE;
+      window.open(buildWhatsappUrl(message), "_blank", "noopener");
     });
   });
 
@@ -70,14 +72,12 @@
 
     var nome = form.nome.value.trim();
     var whatsapp = form.whatsapp.value.trim();
-    var interesse = form.interesse.value;
     var mensagem = form.mensagem.value.trim();
 
     var lines = [
-      "Olá! Gostaria de agendar uma consulta com a Dra. Mariana Zahdi.",
+      DEFAULT_WA_MESSAGE,
       "Nome: " + nome,
-      "WhatsApp: " + whatsapp,
-      "Interesse: " + interesse
+      "WhatsApp: " + whatsapp
     ];
     if (mensagem) {
       lines.push("Mensagem: " + mensagem);
