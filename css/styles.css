@@ -187,7 +187,8 @@ button { font-family: inherit; cursor: pointer; }
 /* ---------- Hero ---------- */
 .hero {
   padding: 64px 0 56px;
-  background: linear-gradient(180deg, #f3efe5 0%, var(--color-bg) 65%);
+  /* Solid tone matched to the hero photo's own backdrop so its edges disappear into the section */
+  background: #e6e2e1;
 }
 .hero-inner {
   display: grid;
