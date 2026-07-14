@@ -18,7 +18,7 @@
   --color-whatsapp-dark: #1da851;
 
   --font-heading: "Playfair Display", Georgia, serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -274,7 +274,7 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 500;
 }
 .trust-item { display: flex; align-items: center; gap: 8px; }
-.trust-icon { font-size: 1.1rem; }
+.trust-icon { width: 18px; height: 18px; flex-shrink: 0; color: var(--color-accent); }
 
 /* ---------- Sections ---------- */
 .section { padding: 88px 0; }
@@ -304,7 +304,7 @@ button { font-family: inherit; cursor: pointer; }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.service-icon { font-size: 1.8rem; display: block; margin-bottom: 10px; }
+.service-icon { display: block; width: 30px; height: 30px; margin-bottom: 14px; color: var(--color-primary); }
 .service-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .service-card p { color: var(--color-text-muted); font-size: 0.94rem; margin: 0; }
 
@@ -376,6 +376,10 @@ button { font-family: inherit; cursor: pointer; }
   line-height: 0;
 }
 
+.equipment-showcase { margin: 0 0 40px; }
+.equipment-frame { max-width: 560px; }
+.equipment-frame img { width: 100%; border-radius: var(--radius-md); }
+
 /* CTA intermediária */
 .cta-mid { background: var(--color-primary); text-align: center; }
 .cta-mid-inner { max-width: 640px; }
@@ -397,7 +401,7 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: var(--radius-md);
   background: var(--color-bg-alt);
 }
-.content-pending-icon { font-size: 1.6rem; flex-shrink: 0; }
+.content-pending-icon { width: 26px; height: 26px; flex-shrink: 0; color: var(--color-primary-light); }
 .content-pending p { margin: 0; color: var(--color-text-muted); font-size: 0.92rem; }
 
 /* Avaliação Google */
