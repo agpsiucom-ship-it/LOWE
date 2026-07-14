@@ -1,8 +1,7 @@
 (function () {
   "use strict";
 
-  // TODO: substituir pelo número real de WhatsApp da clínica (formato: 55 + DDD + número, só dígitos)
-  var WHATSAPP_NUMBER = "5541900000000";
+  var WHATSAPP_NUMBER = "554130405777";
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
