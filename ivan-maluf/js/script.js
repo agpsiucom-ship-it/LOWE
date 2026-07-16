@@ -1,8 +1,7 @@
 (function () {
   "use strict";
 
-  // PLACEHOLDER — substituir pelo número real do WhatsApp (DDI+DDD+número, só dígitos)
-  var WHATSAPP_NUMBER = "5541900000000";
+  var WHATSAPP_NUMBER = "554130405777";
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -48,7 +47,7 @@
   }
 
   var DEFAULT_WA_MESSAGE =
-    "Olá! Gostaria de agendar uma consulta sobre rinoplastia com o Dr. Ivan Maluf Júnior.";
+    "Olá! Gostaria de agendar uma consulta sobre rinoplastia com o Dr. Ivan Maluf Jr.";
 
   document.querySelectorAll(".js-whatsapp-cta").forEach(function (link) {
     link.addEventListener("click", function (event) {
