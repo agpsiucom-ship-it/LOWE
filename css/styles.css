@@ -412,6 +412,11 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 0.84rem;
   color: var(--color-text-muted);
 }
+.case-grid {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.case-grid .case-photo { max-width: none; margin: 0; }
 
 /* Indicação */
 .indication-list { max-width: 640px; margin: 0 auto; }
