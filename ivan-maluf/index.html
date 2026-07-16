@@ -78,8 +78,8 @@
 <main id="conteudo">
 
   <!-- BLOCO 1 — HERO -->
-  <section class="hero">
-    <div class="hero-grid">
+  <section class="hero" style="background-image:url('assets/fotos/instrumento-detalhe.webp');">
+    <div class="container hero-inner">
       <div class="hero-copy">
         <p class="eyebrow">Rinoplastia em Curitiba — Dr. Ivan Maluf Jr.</p>
         <h1>O nariz que você sempre imaginou, realizado com a precisão de quem fez mais de mil rinoplastias em Curitiba.</h1>
@@ -115,15 +115,11 @@
           </a>
         </div>
       </div>
-
-      <div class="hero-media" aria-hidden="true">
-        <img src="assets/fotos/instrumento-detalhe.jpg" alt="" class="hero-photo">
-      </div>
     </div>
   </section>
 
   <!-- BLOCO 2 — O SONHO QUE VOCÊ CARREGA -->
-  <section class="section section-dark section-photo-bg" id="sonho" style="background-image:url('assets/fotos/dr-ivan-risco.jpg');">
+  <section class="section section-dark section-photo-bg" id="sonho" style="background-image:url('assets/fotos/dr-ivan-risco.webp');">
     <div class="container">
       <div class="floating-card">
         <div>
@@ -167,10 +163,10 @@
       <div class="about-inner">
         <div class="about-media" aria-hidden="true">
           <div class="about-photo-frame">
-            <img src="assets/fotos/dr-ivan-sobre.jpg" alt="" class="about-photo">
+            <img src="assets/fotos/dr-ivan-sobre.webp" alt="" class="about-photo">
           </div>
           <div class="about-photo-frame about-photo-frame--secondary">
-            <img src="assets/fotos/dr-ivan-sobre-secundaria.jpg" alt="" class="about-photo">
+            <img src="assets/fotos/dr-ivan-sobre-secundaria.webp" alt="" class="about-photo">
           </div>
         </div>
 
@@ -201,26 +197,31 @@
       </div>
 
       <div class="about-reasons about-reasons--grid">
-        <div class="about-reason">
+        <article class="about-reason">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.1 7-12a7 7 0 0 0-14 0c0 4.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
           <h3>23 anos de experiência em cirurgia plástica</h3>
           <p>Mais de mil cirurgias realizadas — cada uma com planejamento individualizado.</p>
-        </div>
-        <div class="about-reason">
+        </article>
+        <article class="about-reason">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 8v6"/></svg>
           <h3>Mestrado e Doutorado em Clínica Cirúrgica — Hospital de Clínicas da UFPR</h3>
           <p>Dupla titulação acadêmica no hospital universitário de referência do Paraná.</p>
-        </div>
-        <div class="about-reason">
+        </article>
+        <article class="about-reason">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/></svg>
           <h3>Referência em casos complexos</h3>
           <p>Sou o cirurgião que colegas médicos procuram quando o caso é grave. Tenho experiência em reconstrução completa de nariz — do zero, com enxerto de costela, conduzida inteiramente por mim.</p>
-        </div>
-        <div class="about-reason">
+        </article>
+        <article class="about-reason">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/></svg>
           <h3>Ambiente hospitalar</h3>
           <p>Opero sempre em hospital, com anestesista fixo da minha equipe e material cirúrgico de excelência. Segurança não é opcional.</p>
-        </div>
-        <div class="about-reason">
+        </article>
+        <article class="about-reason">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 14.6 8.9 20.5 9.7 16.2 13.9 17.2 19.8 12 17 6.8 19.8 7.8 13.9 3.5 9.7 9.4 8.9 12 3.5Z"/></svg>
           <h3>Prêmio de melhor trabalho em cirurgia plástica — PRS</h3>
           <p>Reconhecimento pela Plastic and Reconstructive Surgery, a revista de maior impacto científico mundial da especialidade.</p>
-        </div>
+        </article>
       </div>
 
       <div class="pull-quote" style="max-width:760px;">
@@ -294,7 +295,7 @@
       </div>
 
       <div class="quote-media-row">
-        <img src="assets/fotos/instrumento-detalhe.jpg" alt="" class="quote-media-photo">
+        <img src="assets/fotos/instrumento-detalhe.webp" alt="" class="quote-media-photo">
         <div class="pull-quote pull-quote--tight">
           <blockquote>“Até a ponta da tesoura muda o resultado. Se ela cortar a cartilagem um pouco a mais, um pouco a menos — isso faz diferença. O material tem que ser de excelência.”</blockquote>
         </div>
@@ -307,7 +308,7 @@
     <div class="container">
       <div class="equipment-showcase">
         <figure class="equipment-photo">
-          <img src="assets/equipamento/piezo-mectron.jpg" alt="Ponteira do equipamento Piezo Mectron utilizado nas rinoplastias do Dr. Ivan Maluf Jr.">
+          <img src="assets/equipamento/piezo-mectron.png" alt="Ponteira do equipamento Piezo Mectron utilizado nas rinoplastias do Dr. Ivan Maluf Jr.">
         </figure>
       </div>
 
@@ -364,7 +365,7 @@
     <div class="container">
       <div class="showcase-intro">
         <span class="ghost-text" aria-hidden="true">RINOPLASTIA</span>
-        <img src="assets/fotos/dr-ivan-sobre.jpg" alt="" class="showcase-photo">
+        <img src="assets/fotos/dr-ivan-sobre.webp" alt="" class="showcase-photo">
         <div class="showcase-copy">
           <p class="eyebrow">Resultados reais. Rostos reais.</p>
           <h2>Mais de mil <span class="accent">rinoplastias.</span> <span class="accent">23 anos de experiência.</span> Veja o que é possível.</h2>
@@ -431,7 +432,7 @@
       </ul>
 
       <div class="quote-spotlight">
-        <img src="assets/fotos/dr-ivan-hero.jpg" alt="">
+        <img src="assets/fotos/dr-ivan-hero.webp" alt="">
         <p class="big-quote">
           “Antes da cirurgia é só alegria — você quer realizar seu sonho.
           Depois, quando o paciente mais precisa, é o que mais escuto de
@@ -473,7 +474,7 @@
 
       <div class="equipment-showcase">
         <figure class="equipment-photo">
-          <img src="assets/fotos/dr-ivan-risco.jpg" alt="Dr. Ivan Maluf Jr. durante cirurgia, sob luzes de centro cirúrgico">
+          <img src="assets/fotos/dr-ivan-risco.webp" alt="Dr. Ivan Maluf Jr. durante cirurgia, sob luzes de centro cirúrgico">
         </figure>
       </div>
 
@@ -518,7 +519,7 @@
     <div class="container">
       <div class="equipment-showcase">
         <figure class="equipment-photo">
-          <img src="assets/equipamento/simulacao-3d.jpg" alt="Software de simulação 3D mostrando comparativo de perfil antes e depois de rinoplastia">
+          <img src="assets/equipamento/simulacao-3d.webp" alt="Software de simulação 3D mostrando comparativo de perfil antes e depois de rinoplastia">
         </figure>
       </div>
 
@@ -721,6 +722,7 @@
 
   <!-- BLOCO 12 — CTA FINAL -->
   <section class="section cta-final" id="agendar">
+    <span class="ghost-text ghost-text--light" aria-hidden="true">DR. IVAN</span>
     <div class="container cta-inner">
       <div class="cta-copy">
         <p class="eyebrow eyebrow-inverse">Você chegou até aqui por um motivo.</p>
@@ -728,10 +730,7 @@
 
         <div class="pull-quote pull-quote--tight">
           <blockquote>“Às vezes a gente economiza tanta coisa na vida — aí vai economizar com a tua saúde, com a tua segurança, com o teu rosto. Nunca vi um paciente que olhou no espelho feliz e disse que queria ter gasto menos. Nunca.”</blockquote>
-          <div class="pull-quote-author">
-            <img src="assets/fotos/dr-ivan-silhueta.jpg" alt="" class="pull-quote-avatar">
-            <cite>— Dr. Ivan Maluf Jr.</cite>
-          </div>
+          <cite>— Dr. Ivan Maluf Jr.</cite>
         </div>
 
         <ul class="cta-points">
