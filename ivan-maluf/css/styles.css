@@ -328,10 +328,12 @@ button { font-family: inherit; cursor: pointer; }
 /* About */
 .about-inner {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
 }
+.about-media { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; position: sticky; top: 100px; }
+.about-photo-frame--secondary { align-self: end; }
 .about-reasons { margin-top: 20px; display: flex; flex-direction: column; gap: 18px; }
 .about-reason h3 { font-size: 1.02rem; margin-bottom: 4px; }
 .about-reason p { color: var(--color-text-muted); font-size: 0.94rem; margin: 0; }
@@ -629,6 +631,32 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--color-text-muted);
 }
 .pull-quote--tight { margin: 24px 0 0; max-width: none; }
+.pull-quote-author { display: flex; align-items: center; gap: 12px; margin-top: 4px; }
+.pull-quote-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 32% 38%;
+  flex-shrink: 0;
+}
+
+.quote-media-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  max-width: 900px;
+  margin: 32px auto 0;
+}
+.quote-media-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+.quote-media-row .pull-quote { margin: 0; flex: 1; }
 .cta-final .pull-quote {
   background: rgba(255, 255, 255, 0.06);
   border-left-color: var(--color-primary-light);
@@ -769,7 +797,9 @@ button { font-family: inherit; cursor: pointer; }
   .hero-inner { grid-template-columns: 1fr; }
   .hero-media { order: -1; max-width: 320px; margin: 0 auto; }
   .about-inner { grid-template-columns: 1fr; }
-  .about-media { max-width: 320px; margin: 0 auto; }
+  .about-media { position: static; max-width: 380px; margin: 0 auto 8px; }
+  .quote-media-row { flex-direction: column; }
+  .quote-media-photo { width: 100%; height: auto; aspect-ratio: 4/3; }
   .location-inner { grid-template-columns: 1fr; }
   .cta-inner { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
