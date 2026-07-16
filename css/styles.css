@@ -244,6 +244,11 @@ button { font-family: inherit; cursor: pointer; }
   height: auto;
   display: block;
 }
+.hero-photo--landscape {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 100% center;
+}
 .about-photo-frame {
   border-radius: var(--radius-lg);
   overflow: hidden;
