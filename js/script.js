@@ -47,6 +47,7 @@
   }
 
   var DEFAULT_WA_MESSAGE =
+    document.body.getAttribute("data-wa-default") ||
     "Olá! Gostaria de agendar uma avaliação para o Ultraformer MPT com a Dra. Mariana Zahdi.";
 
   document.querySelectorAll(".js-whatsapp-cta").forEach(function (link) {

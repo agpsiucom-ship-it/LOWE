@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Dra. Mariana Zahdi — Landing Page (Ultraformer MPT)
+   Dra. Mariana Zahdi — Landing pages (Ultraformer MPT, Coolfase...)
    Paleta oficial da marca (mauve/bordô + neutro quente).
    ========================================================================== */
 
@@ -430,6 +430,13 @@ button { font-family: inherit; cursor: pointer; }
 }
 .content-pending-icon { width: 26px; height: 26px; flex-shrink: 0; color: var(--color-primary-light); }
 .content-pending p { margin: 0; color: var(--color-text-muted); font-size: 0.92rem; }
+.content-pending--media {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.content-pending--media .content-pending-icon { width: 34px; height: 34px; margin: 0 auto 4px; }
 
 /* Depoimentos */
 .testimonial-grid { max-width: 920px; margin: 0 auto; }
