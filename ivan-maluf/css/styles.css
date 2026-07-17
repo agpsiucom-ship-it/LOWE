@@ -747,15 +747,11 @@ button { font-family: inherit; cursor: pointer; }
 .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 
 /* Big editorial quote */
-.big-quote-row {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 44px;
-  align-items: center;
-  max-width: 1000px;
+.big-quote-block {
+  max-width: 760px;
   margin: 56px auto 0;
+  text-align: center;
 }
-.big-quote-photo { width: 100%; display: block; border-radius: var(--radius-md); }
 .big-quote {
   font-family: var(--font-heading);
   font-size: clamp(1.3rem, 2.4vw, 1.9rem);
@@ -990,7 +986,6 @@ button { font-family: inherit; cursor: pointer; }
   .floating-card { grid-template-columns: 1fr; padding: 32px 24px; }
   .tech-intro { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: 1fr; }
-  .big-quote-row { grid-template-columns: 1fr; }
   .about-reasons--grid { grid-template-columns: 1fr; }
   .ghost-text { display: none; }
 }
