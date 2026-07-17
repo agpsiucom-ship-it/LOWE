@@ -510,8 +510,19 @@ button { font-family: inherit; cursor: pointer; }
 .content-pending-icon { width: 26px; height: 26px; flex-shrink: 0; color: var(--color-primary-light); }
 .content-pending p { margin: 0; color: var(--color-text-muted); font-size: 0.92rem; }
 
+/* Avaliação Google */
+.rating-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.rating-stars { color: var(--color-primary-dark); font-size: 1.4rem; letter-spacing: 2px; }
+.rating-text { font-weight: 600; color: var(--color-text); }
+
 /* Depoimentos */
-.testimonial-grid { max-width: 920px; margin: 0 auto; }
+.testimonial-grid { max-width: 1160px; margin: 0 auto; }
 .testimonial-card {
   background: var(--color-bg);
   border: 1px solid var(--color-border);
@@ -746,11 +757,31 @@ button { font-family: inherit; cursor: pointer; }
 
 .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 
-/* Big editorial quote */
+/* Big editorial quote — speech bubble pointing up at the photo */
 .big-quote-block {
-  max-width: 760px;
-  margin: 56px auto 0;
-  text-align: center;
+  position: relative;
+  z-index: 0;
+  max-width: 640px;
+  margin: 72px 0 0;
+  text-align: left;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  box-shadow: var(--shadow-md);
+}
+.big-quote-block::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 56px;
+  width: 26px;
+  height: 26px;
+  background: var(--color-bg-alt);
+  border-left: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  transform: rotate(45deg);
+  z-index: -1;
 }
 .big-quote {
   font-family: var(--font-heading);
@@ -905,22 +936,6 @@ button { font-family: inherit; cursor: pointer; }
 .step-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
 .step-card p { color: var(--color-text-muted); font-size: 0.94rem; margin: 0; }
 
-/* ---------- Testimonial placeholders ---------- */
-.testimonial-placeholder {
-  border: 1px dashed var(--color-primary-light);
-  border-radius: var(--radius-md);
-  padding: 22px 24px;
-  background: var(--color-bg-alt);
-}
-.testimonial-placeholder h3 { font-size: 0.98rem; margin-bottom: 8px; color: var(--color-text); }
-.testimonial-placeholder p { margin: 0 0 12px; color: var(--color-text-muted); font-size: 0.88rem; }
-.testimonial-placeholder .placeholder-tag {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-primary-dark);
-}
 
 /* ---------- Note box ---------- */
 .note-box {
