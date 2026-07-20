@@ -506,12 +506,6 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: 999px;
 }
 .case-tag--after { background: var(--color-primary-dark); left: auto; right: 10px; }
-.case-item figcaption {
-  text-align: center;
-  margin-top: 14px;
-  font-size: 0.88rem;
-  color: var(--color-text-muted);
-}
 .case-disclaimer {
   text-align: center;
   margin: 32px 0 0;
@@ -783,29 +777,6 @@ button { font-family: inherit; cursor: pointer; }
 .section-dark .feature-list .feature-icon { color: var(--color-primary-light); }
 
 .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-
-/* Big editorial quote */
-.big-quote-block {
-  max-width: 640px;
-  margin: 72px 0 0;
-  text-align: left;
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 36px 40px;
-  box-shadow: var(--shadow-md);
-}
-.big-quote {
-  font-family: var(--font-heading);
-  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
-  font-weight: 700;
-  line-height: 1.4;
-  color: var(--color-text);
-  margin: 0;
-}
-.big-quote cite { display: block; margin-top: 16px; font-size: 0.85rem; font-weight: 600; color: var(--color-text-muted); font-style: normal; }
-.section-dark .big-quote { color: #fff; }
-.section-dark .big-quote cite { color: #c9c2b4; }
 
 .ghost-text {
   position: absolute;
