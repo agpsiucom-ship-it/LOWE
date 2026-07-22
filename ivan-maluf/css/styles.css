@@ -148,41 +148,7 @@ button { font-family: inherit; cursor: pointer; }
 .brand-text strong { font-family: var(--font-heading); font-size: 1.05rem; color: var(--color-text); }
 .brand-text small { font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); }
 
-.main-nav {
-  display: flex;
-  gap: 28px;
-  flex: 1;
-  justify-content: center;
-}
-.main-nav a {
-  font-size: 0.94rem;
-  font-weight: 500;
-  color: var(--color-text);
-  position: relative;
-  padding: 6px 0;
-}
-.main-nav a:hover { color: var(--color-primary-dark); }
-
 .header-actions { display: flex; align-items: center; gap: 12px; }
-
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-}
-.nav-toggle span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  margin: 0 auto;
-  background: var(--color-text);
-}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -950,22 +916,6 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
-  .main-nav { display: none; }
-  .nav-toggle { display: flex; }
-  .site-header.nav-open .main-nav {
-    display: flex;
-    position: absolute;
-    top: 76px;
-    left: 0;
-    right: 0;
-    background: var(--color-bg-alt);
-    flex-direction: column;
-    padding: 16px 24px;
-    gap: 16px;
-    border-bottom: 1px solid var(--color-border);
-    box-shadow: var(--shadow-md);
-  }
-
   .hero { min-height: 0; background-position: center 30%; }
   .hero::before { background: linear-gradient(180deg, rgba(20, 18, 15, 0.55) 0%, rgba(20, 18, 15, 0.9) 55%, rgba(20, 18, 15, 0.96) 100%); }
   .hero-inner { padding: 260px 24px 48px; }
@@ -989,13 +939,15 @@ button { font-family: inherit; cursor: pointer; }
   .ghost-text { display: none; }
 }
 
-@media (max-width: 560px) {
-  .header-cta { display: none; }
-}
-
 @media (max-width: 620px) {
   .section { padding: 64px 0; }
   .grid-3 { grid-template-columns: 1fr; }
   .hero-inner { padding: 200px 20px 40px; }
   .cta-form { padding: 24px 20px; }
+  .header-inner { gap: 8px; }
+  .brand { gap: 6px; }
+  .brand-mark { width: 34px; height: 34px; }
+  .brand-text strong { font-size: 0.86rem; }
+  .brand-text small { display: none; }
+  .header-cta { white-space: nowrap; padding: 8px 12px; font-size: 0.76rem; }
 }
