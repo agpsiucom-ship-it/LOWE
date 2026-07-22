@@ -162,29 +162,12 @@ svg { display: block; }
 
 .hero-cta-group { display: flex; flex-wrap: wrap; gap: 14px; margin: 8px 0 0; }
 
-/* Decorative heartbeat panel — pure CSS/SVG, no image request */
 .hero-media { position: relative; }
-.heartbeat-panel {
-  background: var(--color-navy);
+.hero-photo {
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
-  padding: 36px 28px;
-  box-shadow: var(--shadow-lg);
-  color: #fff;
-  position: relative;
-  overflow: hidden;
 }
-.heartbeat-panel::before {
-  content: "";
-  position: absolute;
-  inset: -40% -20%;
-  background:
-    radial-gradient(circle at 25% 15%, rgba(154, 26, 29, 0.4), transparent 55%),
-    radial-gradient(circle at 85% 85%, rgba(37, 59, 150, 0.35), transparent 55%);
-}
-.heartbeat-line { width: 100%; height: 64px; color: var(--color-primary-light); position: relative; z-index: 1; }
-.heartbeat-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; position: relative; z-index: 1; }
-.heartbeat-stat strong { display: block; font-size: 1.7rem; color: #fff; }
-.heartbeat-stat span { font-size: 0.8rem; color: #c9d4dd; }
 
 /* ---------- Sections ---------- */
 .section { padding: 84px 0; }
@@ -224,10 +207,25 @@ svg { display: block; }
 }
 .section-navy .callout { background: rgba(255,255,255,0.06); border-left-color: var(--color-navy-light); color: #dfe4f5; }
 
-/* ---------- Hub quote card ---------- */
-.quote-card {
-  max-width: 760px;
+/* ---------- Hub ---------- */
+.hub-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1000px;
   margin: 0 auto;
+}
+.hub-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.quote-card {
+  margin: 0;
   background: var(--color-bg-alt);
   border-radius: var(--radius-lg);
   padding: 36px 40px;
@@ -253,6 +251,10 @@ svg { display: block; }
   background: var(--color-navy); color: #fff;
   display: flex; align-items: center; justify-content: center;
   font-weight: 700; font-size: 1.05rem; flex-shrink: 0;
+}
+.doctor-avatar-photo {
+  width: 54px; height: 54px; border-radius: 50%;
+  object-fit: cover; flex-shrink: 0;
 }
 .doctor-name { font-weight: 700; color: var(--color-navy); font-size: 1rem; }
 .doctor-reg { font-size: 0.78rem; color: var(--color-text-muted); }
@@ -357,6 +359,8 @@ svg { display: block; }
   }
   .hero-inner { grid-template-columns: 1fr; }
   .hero-media { order: -1; max-width: 420px; margin: 0 auto; }
+  .hub-inner { grid-template-columns: 1fr; }
+  .hub-photo { max-width: 360px; margin: 0 auto; }
   .grid-3, .exam-list, .stat-grid, .risk-grid, .network-grid, .timeline { grid-template-columns: repeat(2, 1fr); }
 }
 
