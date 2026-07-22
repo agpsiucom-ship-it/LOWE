@@ -135,7 +135,7 @@ svg { display: block; }
 .nav-toggle span { display: block; width: 18px; height: 2px; margin: 0 auto; background: var(--color-navy); }
 
 /* ---------- Hero ---------- */
-.hero { padding: 68px 0 56px; background: linear-gradient(160deg, #ffffff 0%, #f2eeec 60%, #ede4e2 100%); overflow: hidden; }
+.hero { padding: 68px 0 56px; background: #e7ebee; overflow: hidden; }
 .hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 48px; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 700; color: var(--color-primary); margin-bottom: 12px; }
 .eyebrow-inverse { color: #e5b8b0; }
@@ -235,8 +235,8 @@ svg { display: block; }
 }
 .doctor-photo,
 .doctor-photo-placeholder {
-  width: 112px;
-  height: 112px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
@@ -249,7 +249,7 @@ svg { display: block; }
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.9rem;
+  font-size: 2.2rem;
 }
 .doctor-name { font-weight: 700; color: var(--color-navy); font-size: 1.02rem; }
 .doctor-reg { font-size: 0.78rem; color: var(--color-text-muted); margin-bottom: 10px; }
