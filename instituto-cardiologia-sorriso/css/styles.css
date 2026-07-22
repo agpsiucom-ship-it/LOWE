@@ -119,16 +119,8 @@ svg { display: block; }
   border-bottom: 1px solid var(--color-border);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 16px; }
-.brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.brand-mark {
-  display: flex; align-items: center; justify-content: center;
-  width: 42px; height: 42px; border-radius: 50%;
-  background: var(--color-navy); flex-shrink: 0;
-}
-.brand-mark svg { width: 24px; height: 20px; }
-.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
-.brand-text strong { font-size: 1.02rem; color: var(--color-navy); }
-.brand-text small { font-size: 0.7rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-muted); }
+.brand { display: flex; align-items: center; flex-shrink: 0; }
+.brand-logo { height: 40px; width: auto; }
 
 .main-nav { display: flex; gap: 26px; flex: 1; justify-content: center; }
 .main-nav a { font-size: 0.92rem; font-weight: 500; color: var(--color-text); padding: 6px 0; }
@@ -172,9 +164,8 @@ svg { display: block; }
 /* ---------- Sections ---------- */
 .section { padding: 84px 0; }
 .section-alt { background: var(--color-bg-alt); }
-.section-navy { background: var(--color-navy); color: #dfe6ec; position: relative; overflow: hidden; }
+.section-navy { background: var(--color-navy); color: #dfe6ec; }
 .section-navy h2, .section-navy h3 { color: #fff; }
-.brand-ribbon-deco { position: absolute; top: -10%; right: -6%; width: 360px; height: 300px; opacity: 0.16; pointer-events: none; }
 .section-head { max-width: 700px; margin: 0 auto 44px; text-align: center; }
 .section-head h2 { font-size: clamp(1.55rem, 2.5vw, 2.05rem); }
 .section-sub { color: var(--color-text-muted); }
@@ -326,14 +317,8 @@ svg { display: block; }
 /* ---------- Footer ---------- */
 .site-footer { background: #0a1a29; color: #a9b7c1; padding: 40px 0 26px; }
 .footer-inner { text-align: center; }
-.footer-brand { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 16px; }
-.footer-mark {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--color-navy); border: 1px solid rgba(255,255,255,0.12);
-  display: flex; align-items: center; justify-content: center;
-}
-.footer-mark svg { width: 25px; height: 21px; }
-.footer-name { font-weight: 700; color: #fff; }
+.footer-brand { display: flex; justify-content: center; margin-bottom: 16px; }
+.footer-logo { height: 40px; width: auto; }
 .footer-address { margin-bottom: 14px; font-size: 0.92rem; }
 .footer-address a { text-decoration: underline; text-decoration-color: rgba(169,42,47,0.5); }
 .footer-disclaimer { max-width: 660px; margin: 0 auto 16px; font-size: 0.78rem; color: #7d8d98; line-height: 1.6; }
