@@ -125,7 +125,7 @@ svg { display: block; }
 .header-actions { display: flex; align-items: center; gap: 12px; }
 
 /* ---------- Hero ---------- */
-.hero { padding: 68px 0 56px; background: #e7ebee; overflow: hidden; }
+.hero { padding: 68px 0 56px; background: #e6e2df; overflow: hidden; }
 .hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 48px; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 700; color: var(--color-primary); margin-bottom: 12px; }
 .eyebrow-inverse { color: #e5b8b0; }
