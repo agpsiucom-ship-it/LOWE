@@ -323,7 +323,7 @@ svg { display: block; }
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-media { order: -1; max-width: 420px; margin: 0 auto; }
+  .hero-media { max-width: 420px; margin: 0 auto; }
   .hub-inner { grid-template-columns: 1fr; }
   .hub-photo { max-width: 360px; margin: 0 auto; }
   .grid-3, .exam-list, .stat-grid, .risk-grid, .timeline { grid-template-columns: repeat(2, 1fr); }
