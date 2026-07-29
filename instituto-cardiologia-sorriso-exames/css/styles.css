@@ -147,7 +147,6 @@ svg { display: block; }
 .hero-media { position: relative; text-align: center; }
 .hero-photo {
   width: 100%;
-  max-width: 440px;
   height: auto;
 }
 
