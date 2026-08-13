@@ -1,10 +1,8 @@
 (function () {
   "use strict";
 
-  // TODO: confirme o número de Sinop — foi informado com 8 dígitos locais
-  // (9981-3103); celulares no Brasil têm 9 dígitos (ex.: 99981-3103).
   var WHATSAPP_NUMBERS = {
-    sinop: "556699813103",
+    sinop: "5566999813103",
     sorriso: "5566999106353"
   };
   var DEFAULT_UNIT = "sinop";
