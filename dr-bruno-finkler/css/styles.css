@@ -1,6 +1,7 @@
 /* ==========================================================================
    Dr. Bruno Finkler — Landing Page (Fibrilação Atrial / Eletrofisiologia)
-   Paleta editorial: bege + cinza + vermelho-marsala (identidade da logo).
+   Paleta editorial: vermelho-marsala + cinza (identidade da logo). Seções
+   sem ".section-alt" usam o vermelho como fundo (var(--color-bg-dark-soft)).
    ========================================================================== */
 
 :root {
@@ -8,7 +9,6 @@
   --color-primary-dark: #590c0e;
   --color-accent: #590c0e;
 
-  --color-bg: #d1ceb6;
   --color-bg-alt: #ffffff;
   --color-surface: #d8d8d8;
   --color-bg-dark: #590c0e;
@@ -47,7 +47,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--color-text);
-  background: var(--color-bg);
+  background: var(--color-bg-alt);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -156,47 +156,18 @@ select { font-family: inherit; }
 .brand-text strong { font-family: var(--font-heading); font-size: 1.05rem; color: var(--color-primary-dark); }
 .brand-text small { font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-muted); }
 
-.main-nav {
-  display: flex;
-  gap: 26px;
-  flex: 1;
-  justify-content: center;
-}
-.main-nav a {
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: var(--color-text);
-  position: relative;
-  padding: 6px 0;
-}
-.main-nav a:hover { color: var(--color-primary-dark); }
-
 .header-actions { display: flex; align-items: center; gap: 12px; }
-
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-}
-.nav-toggle span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  margin: 0 auto;
-  background: var(--color-primary-dark);
-}
 
 /* ---------- Hero ---------- */
 .hero {
   padding: 64px 0 56px;
-  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
+  background: linear-gradient(180deg, var(--color-bg-dark-soft) 0%, var(--color-bg-dark) 100%);
 }
+.hero .eyebrow { color: #fff; }
+.hero h1 { color: #fff; }
+.hero-lead { color: rgba(255, 255, 255, 0.85); }
+.hero-check-list li { color: #fff; }
+.hero-check-list li::before { color: #fff; }
 .hero-inner {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -324,8 +295,8 @@ select { font-family: inherit; }
 .trust-icon { width: 18px; height: 18px; flex-shrink: 0; color: #fff; }
 
 /* ---------- Sections ---------- */
-.section { padding: 88px 0; }
-.section-alt { background: var(--color-bg-alt); }
+.section { padding: 88px 0; background: var(--color-bg-dark-soft); color: #fff; }
+.section-alt { background: var(--color-bg-alt); color: var(--color-text); }
 .section-head {
   max-width: 700px;
   margin: 0 auto 48px;
@@ -333,6 +304,13 @@ select { font-family: inherit; }
 }
 .section-head h2 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); }
 .section-sub { color: var(--color-text-muted); }
+
+/* Seções sem .section-alt herdam o fundo vermelho: título/eyebrow soltos
+   direto no fundo precisam de cor clara (cards internos mantêm seu próprio
+   fundo e não são afetados). */
+.section:not(.section-alt) .eyebrow { color: #fff; }
+.section:not(.section-alt) .section-head h2 { color: #fff; }
+.section:not(.section-alt) .section-sub { color: rgba(255, 255, 255, 0.82); }
 
 .grid { display: grid; gap: 24px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
@@ -567,7 +545,7 @@ select { font-family: inherit; }
 .form-success {
   margin-top: 12px;
   padding: 10px 14px;
-  background: var(--color-bg);
+  background: var(--color-bg-alt);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   color: var(--color-primary-dark);
@@ -629,22 +607,6 @@ select { font-family: inherit; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
-  .main-nav { display: none; }
-  .nav-toggle { display: flex; }
-  .site-header.nav-open .main-nav {
-    display: flex;
-    position: absolute;
-    top: 76px;
-    left: 0;
-    right: 0;
-    background: var(--color-bg-alt);
-    flex-direction: column;
-    padding: 16px 24px;
-    gap: 16px;
-    border-bottom: 1px solid var(--color-border);
-    box-shadow: var(--shadow-md);
-  }
-
   .hero-inner { grid-template-columns: 1fr; }
   .hero-media { order: -1; max-width: 320px; margin: 0 auto; }
   .about-inner { grid-template-columns: 1fr; }
@@ -654,10 +616,6 @@ select { font-family: inherit; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-2 { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 560px) {
-  .header-cta { display: none; }
 }
 
 @media (max-width: 620px) {
