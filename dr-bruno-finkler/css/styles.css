@@ -25,10 +25,11 @@
 
   /* Helvetica Now é fonte comercial (Monotype), sem distribuição via Google
      Fonts. Mantida como 1ª opção da pilha para quando o cliente tiver os
-     arquivos licenciados (basta declarar @font-face); até lá, cai para
-     Helvetica Neue/Arial, que têm métricas quase idênticas. */
+     arquivos licenciados (basta declarar @font-face). Até lá, o fallback é
+     Inter (carregada via Google Fonts) em vez de cair direto no Arial do
+     sistema — mantém o corpo do texto com uma fonte desenhada de propósito. */
   --font-heading: "Noto Serif Display", Georgia, "Times New Roman", serif;
-  --font-body: "Helvetica Now Text", "Helvetica Now", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Helvetica Now Text", "Helvetica Now", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -56,11 +57,16 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-primary-dark);
   line-height: 1.2;
+  letter-spacing: -0.01em;
   margin: 0 0 0.5em;
 }
+/* Só os títulos de maior destaque (hero e cabeçalho de seção) carregam o
+   peso cheio da serifada; títulos de card/step ficam em semibold para não
+   pesar quando repetidos várias vezes na mesma tela. */
+h1, h2 { font-weight: 700; }
 
 p { margin: 0 0 1em; }
 ul { margin: 0; padding: 0; list-style: none; }
@@ -184,6 +190,8 @@ select { font-family: inherit; }
 .hero h1 {
   font-size: clamp(2rem, 3.4vw, 2.85rem);
   max-width: 22ch;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
 }
 .hero-lead {
   font-size: 1.08rem;
@@ -299,7 +307,7 @@ select { font-family: inherit; }
   margin: 0 auto 48px;
   text-align: center;
 }
-.section-head h2 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); }
+.section-head h2 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.15; }
 .section-sub { color: var(--color-text-muted); }
 
 .grid { display: grid; gap: 24px; }
