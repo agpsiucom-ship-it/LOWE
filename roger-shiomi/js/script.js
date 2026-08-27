@@ -7,23 +7,6 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // ---------- Mobile nav ----------
-  var header = document.getElementById("topo");
-  var navToggle = document.getElementById("navToggle");
-  var mainNav = document.getElementById("mainNav");
-
-  navToggle.addEventListener("click", function () {
-    var isOpen = header.classList.toggle("nav-open");
-    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  });
-
-  mainNav.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", function () {
-      header.classList.remove("nav-open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
-  });
-
   // ---------- FAQ accordion ----------
   document.querySelectorAll(".faq-question").forEach(function (btn) {
     btn.addEventListener("click", function () {
