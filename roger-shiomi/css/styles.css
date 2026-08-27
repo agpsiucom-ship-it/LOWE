@@ -1,6 +1,7 @@
 /* ==========================================================================
    Dr. Roger Shiomi — Oncologia Clínica — Landing Page
-   Editorial dark/light rhythm, marca teal + pink + roxo sobre neutro claro.
+   Editorial dark/light rhythm, explorando o teal da marca (#00A79D)
+   como cor de destaque sobre neutro claro.
    ========================================================================== */
 
 @font-face {
@@ -40,9 +41,9 @@
   --color-text-muted: #56706c;
   --color-border: #dbe8e6;
 
-  /* Dark surfaces (two alternating tones, like a printed spread) */
-  --color-dark-1: #0a2624;
-  --color-dark-2: #163f3a;
+  /* Dark surfaces — both derived from the brand teal, not a separate hue */
+  --color-dark-1: #052a26;
+  --color-dark-2: #0a5850;
   --color-dark-text: #eef7f5;
   --color-dark-text-muted: #a4c9c4;
   --color-dark-border: rgba(238, 247, 245, 0.16);
@@ -174,7 +175,7 @@ strong { font-weight: 700; color: inherit; }
   letter-spacing: 0.1em;
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--color-pink);
+  color: var(--color-primary);
   margin-bottom: 12px;
 }
 .eyebrow-inverse { color: var(--color-primary-light); }
@@ -182,7 +183,7 @@ strong { font-weight: 700; color: inherit; }
   display: block;
   width: 40px;
   height: 3px;
-  background: var(--color-pink);
+  background: var(--color-primary);
   border-radius: 2px;
   margin: 0 0 20px;
 }
@@ -203,19 +204,19 @@ strong { font-weight: 700; color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 78% 20%;
+  object-position: 62% 32%;
   z-index: 0;
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg,
-    var(--color-dark-1) 0%,
-    var(--color-dark-1) 34%,
-    rgba(10, 38, 36, 0.88) 50%,
-    rgba(10, 38, 36, 0.5) 66%,
-    rgba(10, 38, 36, 0.1) 84%);
+  background: linear-gradient(100deg,
+    rgba(6, 55, 50, 0.9) 0%,
+    rgba(6, 55, 50, 0.68) 20%,
+    rgba(6, 55, 50, 0.32) 38%,
+    rgba(6, 55, 50, 0.08) 56%,
+    rgba(6, 55, 50, 0) 70%);
   z-index: 1;
 }
 .hero-inner {
@@ -223,17 +224,19 @@ strong { font-weight: 700; color: inherit; }
   z-index: 2;
   padding: 92px 0;
 }
-.hero-copy { max-width: 640px; }
-.hero .eyebrow { color: var(--color-primary-light); }
+.hero-copy { max-width: 600px; }
+.hero .eyebrow { color: var(--color-primary-light); text-shadow: 0 1px 12px rgba(3, 20, 18, 0.7); }
 .hero h1 {
   color: #fff;
   font-size: clamp(2rem, 3.2vw, 2.65rem);
   max-width: 20ch;
+  text-shadow: 0 2px 20px rgba(3, 20, 18, 0.55);
 }
 .hero-lead {
   font-size: 1.05rem;
   color: var(--color-dark-text-muted);
-  max-width: 46ch;
+  max-width: 42ch;
+  text-shadow: 0 1px 14px rgba(3, 20, 18, 0.6);
 }
 .hero-cta-group {
   display: flex;
@@ -254,7 +257,7 @@ strong { font-weight: 700; color: inherit; }
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--color-pink);
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -287,7 +290,7 @@ strong { font-weight: 700; color: inherit; }
   font-weight: 500;
 }
 .trust-item { display: flex; align-items: center; gap: 8px; }
-.trust-icon { width: 17px; height: 17px; flex-shrink: 0; color: var(--color-pink); }
+.trust-icon { width: 17px; height: 17px; flex-shrink: 0; color: var(--color-primary-light); }
 
 /* ---------- Sections ---------- */
 .section { padding: 88px 0; }
@@ -347,7 +350,7 @@ strong { font-weight: 700; color: inherit; }
   height: 18px;
   flex-shrink: 0;
   margin-top: 3px;
-  color: var(--color-pink);
+  color: var(--color-primary-light);
 }
 .checklist-item span {
   font-weight: 600;
@@ -403,7 +406,7 @@ strong { font-weight: 700; color: inherit; }
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--color-pink);
+  background: var(--color-primary);
 }
 .formacao-card p { margin: 0; font-size: 1rem; color: var(--color-text); }
 .formacao-card p strong { color: var(--color-primary-dark); }
@@ -425,7 +428,7 @@ strong { font-weight: 700; color: inherit; }
   font-weight: 700;
   color: var(--color-primary-light);
 }
-.location-map-link:hover { color: var(--color-pink); }
+.location-map-link:hover { color: #fff; }
 
 /* FAQ */
 .faq-list { max-width: 780px; margin: 0 auto; }
@@ -450,7 +453,7 @@ strong { font-weight: 700; color: inherit; }
   flex-shrink: 0;
   font-size: 1.3rem;
   font-weight: 400;
-  color: var(--color-pink);
+  color: var(--color-primary);
   transition: transform 0.2s ease;
 }
 .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
@@ -479,7 +482,6 @@ strong { font-weight: 700; color: inherit; }
 }
 .cta-final-inner { max-width: 700px; margin: 0 auto; }
 .cta-final h2 { color: #fff; font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
-.cta-final .eyebrow-inverse { color: var(--color-pink); }
 
 /* Footer */
 .site-footer {
@@ -573,12 +575,12 @@ strong { font-weight: 700; color: inherit; }
   .hero { min-height: 520px; }
   .hero::before {
     background: linear-gradient(180deg,
-      rgba(10, 38, 36, 0.55) 0%,
-      rgba(10, 38, 36, 0.88) 55%,
-      var(--color-dark-1) 100%);
+      rgba(6, 55, 50, 0.15) 0%,
+      rgba(6, 55, 50, 0.72) 62%,
+      rgba(6, 55, 50, 0.94) 100%);
   }
-  .hero-bg-photo { object-position: 65% 15%; }
-  .hero-inner { padding: 220px 0 56px; }
+  .hero-bg-photo { object-position: 58% 22%; }
+  .hero-inner { padding: 260px 0 48px; }
   .hero-copy { max-width: 100%; }
 }
 
