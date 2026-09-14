@@ -50,13 +50,9 @@
     document.body.getAttribute("data-wa-default") ||
     "Olá! Gostaria de agendar uma avaliação para o Ultraformer MPT com a Dra. Mariana Zahdi.";
 
-  document.querySelectorAll(".js-whatsapp-cta").forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      var message = link.getAttribute("data-wa-message") || DEFAULT_WA_MESSAGE;
-      window.open(buildWhatsappUrl(message), "_blank", "noopener");
-    });
-  });
+  // .js-whatsapp-cta links now carry their real https://wa.me/... href
+  // directly in the HTML, so the browser opens them on its own — no click
+  // handler needed here. The class stays for styling only.
 
   // ---------- Lead form -> WhatsApp ----------
   var form = document.getElementById("leadForm");
@@ -82,6 +78,9 @@
     if (mensagem) {
       lines.push("Mensagem: " + mensagem);
     }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "whatsapp_lead_form" });
 
     window.open(buildWhatsappUrl(lines.join("\n")), "_blank", "noopener");
 
