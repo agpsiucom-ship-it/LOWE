@@ -1,0 +1,55 @@
+LANDING PAGE — DR. ROGER SHIOMI
+================================
+
+Esta é uma landing page estática (HTML + CSS + JS puros), sem
+framework e sem etapa de build. Pode ser hospedada em qualquer
+ferramenta/servidor que aceite arquivos estáticos.
+
+ESTRUTURA DE ARQUIVOS
+----------------------
+index.html          → página principal (abrir este arquivo no navegador)
+css/styles.css       → todo o estilo visual
+js/script.js         → menu, FAQ (perguntas frequentes) e botões de WhatsApp
+assets/logo-mark.png → logo (fundo transparente)
+assets/fotos/        → fotos usadas na página
+assets/fonts/        → (vazia) — ver "FONTE" abaixo
+
+COMO SUBIR EM OUTRA FERRAMENTA
+--------------------------------
+Envie a pasta inteira (mantendo a estrutura acima) para o serviço de
+hospedagem escolhido. Exemplos comuns:
+- Hospedagem estática (Netlify, Vercel, Cloudflare Pages, GitHub Pages):
+  arraste a pasta ou conecte o repositório; não precisa de comando de
+  build, é publicar os arquivos como estão.
+- Hospedagem tradicional (cPanel, FTP): copie a pasta inteira para a
+  pasta pública do domínio (ex: public_html/).
+- WordPress ou outro CMS: normalmente é preciso recriar a página dentro
+  do construtor de páginas da ferramenta, usando este HTML/CSS como
+  referência — a maioria dos CMS não aceita HTML/CSS/JS puro direto.
+
+FONTE (IMPORTANTE)
+-------------------
+A identidade visual usa a fonte "Tisa Sans Pro" (comercial). Os
+arquivos da fonte NÃO estão incluídos aqui porque a licença não foi
+fornecida. Enquanto isso, o site usa uma fonte do sistema como
+substituta (visualmente próxima, mas não idêntica).
+
+Se vocês tiverem a licença da Tisa Sans Pro, peça os arquivos
+.woff2 (Regular, Medium e Bold) e coloque-os em assets/fonts/ com
+estes nomes exatos:
+  assets/fonts/TisaSansPro-Regular.woff2
+  assets/fonts/TisaSansPro-Medium.woff2
+  assets/fonts/TisaSansPro-Bold.woff2
+O CSS (css/styles.css, topo do arquivo) já está pronto para carregá-los
+automaticamente assim que existirem.
+
+WHATSAPP
+--------
+O número usado em todos os botões é 5541991970817, definido em
+js/script.js (variável WHATSAPP_NUMBER) — troque ali se precisar.
+
+CONTATO TÉCNICO / CÓDIGO-FONTE COMPLETO
+-----------------------------------------
+O histórico completo de versões desta página está no repositório Git
+do projeto (branch claude/eloquent-cori-wfgij1), caso precise reverter
+ou comparar alterações.
