@@ -268,9 +268,9 @@ strong { font-weight: 700; }
 .hero-photo img {
   width: 100%;
   height: auto;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center top;
+  object-position: 50% center;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   border: 4px solid rgba(255, 255, 255, 0.12);
@@ -408,8 +408,9 @@ strong { font-weight: 700; }
 .about-photo {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 20%;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
