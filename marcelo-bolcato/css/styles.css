@@ -548,11 +548,8 @@ strong { font-weight: 700; }
   border-bottom: 1px solid #22262c;
 }
 .footer-logo {
-  height: 44px;
+  height: 48px;
   width: auto;
-  background: var(--color-white);
-  padding: 6px 10px;
-  border-radius: 8px;
   margin-bottom: 10px;
 }
 .footer-brand p { margin: 0; }
