@@ -3,7 +3,7 @@
 Página única, conversão por WhatsApp (41) 3040-5777. Copy aprovada pelo cliente (blocos 1–10).
 
 ## Pendências antes de publicar
-- **Fotos**: hero e "Sobre" já aplicadas. Faltam 4–6 antes/depois (1:1) — trocar cada `<div class="img-slot">` por `<img>` em WebP.
+- **Fotos**: hero, "Sobre" e 5 casos de antes/depois aplicados.
 - **Depoimentos**: 3 avaliações reais do Google aplicadas.
 - **GTM**: descomentar o snippet no `<head>` e informar o ID.
 
