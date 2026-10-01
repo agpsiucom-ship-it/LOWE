@@ -243,6 +243,7 @@ figure { margin: 0; }
 
 /* Resultados */
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.case-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--r-md); }
 .disclaimer { text-align: center; font-size: .82rem; color: var(--muted); margin: 20px 0 0; }
 .testimonials { margin-top: 56px; }
 .testimonial { background: var(--white); border-radius: var(--r-md); padding: 28px; display: flex; flex-direction: column; }
