@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!--
+  LP de alta conversão — template para médico/clínica (conversão via WhatsApp).
+  Troque todos os marcadores [[...]] e o número 55DDDNUMERO. Veja README.md.
+-->
+<!-- Google Tag Manager: descomente e troque GTM-XXXXXXX
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[[Procedimento]] em [[Cidade]] | [[Dr(a). Nome]] — [[Especialidade]]</title>
+<meta name="description" content="[[Procedimento]] com [[Dr(a). Nome]], [[especialidade]] em [[Cidade]]. Avaliação individual e resultado natural. Agende pelo WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1f3a3d">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[Procedimento]] em [[Cidade]] | [[Dr(a). Nome]]">
+<meta property="og:description" content="Avaliação individual com [[especialidade]]. Agende pelo WhatsApp.">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "[[Dr(a). Nome]]",
+  "medicalSpecialty": "[[Especialidade]]",
+  "identifier": "CRM-[[UF]] [[000000]] / RQE [[0000]]",
+  "telephone": "+55DDDNUMERO",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[[Rua, número, sala]]",
+    "addressLocality": "[[Cidade]]",
+    "addressRegion": "[[UF]]",
+    "addressCountry": "BR"
+  },
+  "availableService": { "@type": "MedicalProcedure", "name": "[[Procedimento]]" }
+}
+</script>
+</head>
+<body>
+
+<a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+<!-- Barra de contexto: reforça localização e canal, sem promessas -->
+<div class="topbar">
+  <div class="container">
+    Atendimento particular em <strong>[[Cidade]] · [[Bairro]]</strong> — agendamento direto pelo WhatsApp
+  </div>
+</div>
+
+<!-- Header enxuto: sem menu de navegação, para não criar rotas de fuga -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#topo" class="brand">
+      <span class="brand-mark" aria-hidden="true">AB</span><!-- [[iniciais]] -->
+      <span class="brand-text">
+        <strong>[[Dr(a). Nome]]</strong>
+        <small>[[Especialidade]] · CRM-[[UF]] [[000000]]</small>
+      </span>
+    </a>
+    <a class="btn btn-wa btn-sm" data-cta="header" target="_blank" rel="noopener"
+       href="https://wa.me/55DDDNUMERO?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">
+      <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+      Agendar<span class="hide-xs">avaliação</span>
+    </a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- 1. HERO — promessa + prova + CTA acima da dobra -->
+  <section class="hero" id="topo">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">[[Procedimento]] em [[Cidade]]</p>
+        <h1>[[Resultado desejado]] com naturalidade, guiado por quem avalia o seu caso.</h1>
+        <p class="lead">
+          [[Uma frase sobre o que o tratamento faz e para quem é.]] Protocolo
+          individual, definido em consulta com [[especialidade]].
+        </p>
+
+        <ul class="check-list">
+          <li>Avaliação individual antes de qualquer indicação</li>
+          <li>[[Benefício-chave 1, ex.: retorno rápido à rotina]]</li>
+          <li>[[Benefício-chave 2, ex.: resultado progressivo e natural]]</li>
+        </ul>
+
+        <div class="cta-block">
+          <a class="btn btn-wa btn-lg" data-cta="hero" target="_blank" rel="noopener"
+             href="https://wa.me/55DDDNUMERO?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            Quero agendar minha avaliação
+          </a>
+          <p class="cta-micro">Sem compromisso · Resposta em horário comercial · Leva menos de 1 minuto</p>
+        </div>
+
+        <div class="proof-row">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span><strong>[[4,9]]</strong> no Google · [[120]]+ avaliações de pacientes</span>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="img-slot img-portrait" role="img" aria-label="Foto de [[Dr(a). Nome]] no consultório">
+          <!-- Troque por: <img src="assets/medico-hero.webp" alt="[[Dr(a). Nome]] no consultório" width="560" height="700" fetchpriority="high"> -->
+          <span>Foto profissional 4:5<br>(médico(a) no consultório)</span>
+        </div>
+        <div class="credential-card">
+          <strong>[[Dr(a). Nome]]</strong>
+          <span>[[Especialidade]] · RQE [[0000]]</span>
+          <span>Membro da [[Sociedade, ex.: SBD]]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. FAIXA DE AUTORIDADE -->
+  <section class="trust-strip" aria-label="Credenciais">
+    <div class="container trust-inner">
+      <div class="trust-item"><strong>[[15]] anos</strong><span>de formação médica</span></div>
+      <div class="trust-item"><strong>RQE [[0000]]</strong><span>especialista registrado(a)</span></div>
+      <div class="trust-item"><strong>[[Sociedade]]</strong><span>membro titular</span></div>
+      <div class="trust-item"><strong>★ [[4,9]]</strong><span>avaliação no Google</span></div>
+    </div>
+  </section>
+
+  <!-- 3. DORES — identificação -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Você se identifica?</p>
+        <h2>Você quer melhorar [[queixa]], mas algo sempre faz você adiar.</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card">
+          <span class="card-num">01</span>
+          <h3>Medo de ficar artificial</h3>
+          <p>Você quer se ver melhor, não diferente. A naturalidade é
+          inegociável — e deve ser mesmo.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">02</span>
+          <h3>Não sabe em quem confiar</h3>
+          <p>Todo mundo diz que é especialista. Você quer alguém que avalie com
+          honestidade e só indique o que faz sentido para você.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">03</span>
+          <h3>Sem tempo para recuperação</h3>
+          <p>Trabalho, família, compromissos. Você precisa de algo que caiba na
+          sua rotina.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SOLUÇÃO + BENEFÍCIOS -->
+  <section class="section section-alt">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">O tratamento</p>
+        <h2>Como o [[Procedimento]] ajuda</h2>
+        <p class="section-sub">
+          [[2–3 frases explicando o mecanismo em linguagem simples: onde atua,
+          o que estimula, em quanto tempo o resultado aparece.]]
+        </p>
+        <a class="btn btn-outline" data-cta="solucao" target="_blank" rel="noopener"
+           href="https://wa.me/55DDDNUMERO?text=Ol%C3%A1!%20Gostaria%20de%20saber%20se%20o%20tratamento%20%C3%A9%20indicado%20para%20mim.">
+          Saber se é indicado para mim
+        </a>
+      </div>
+      <ul class="benefit-list">
+        <li><strong>[[Benefício 1]]</strong><span>[[Explicação curta, sem promessa de resultado.]]</span></li>
+        <li><strong>[[Benefício 2]]</strong><span>[[Explicação curta.]]</span></li>
+        <li><strong>[[Benefício 3]]</strong><span>[[Explicação curta.]]</span></li>
+        <li><strong>Protocolo personalizado</strong><span>Intensidade, áreas e número de sessões definidos para o seu caso.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. COMO FUNCIONA — reduz atrito mostrando o caminho -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Simples do início ao fim</p>
+        <h2>Como funciona o seu atendimento</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <h3>Chame no WhatsApp</h3>
+          <p>Nossa equipe tira suas dúvidas iniciais e encontra o melhor horário.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <h3>Consulta de avaliação</h3>
+          <p>[[Dr(a). Nome]] examina, entende seus objetivos e explica as opções com clareza.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <h3>Plano individual</h3>
+          <p>Você recebe a indicação certa para o seu caso — e decide com tranquilidade, sem pressão.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 6. RESULTADOS — antes/depois (respeitar Res. CFM 2.336/2023) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Resultados</p>
+        <h2>Antes e depois</h2>
+      </div>
+      <div class="grid grid-2">
+        <figure class="case">
+          <div class="img-slot img-wide" role="img" aria-label="Antes e depois — caso 1"><span>Antes / depois — caso 1</span></div>
+          <figcaption>[[Área tratada]] · [[nº de sessões]] · foto após [[X]] meses</figcaption>
+        </figure>
+        <figure class="case">
+          <div class="img-slot img-wide" role="img" aria-label="Antes e depois — caso 2"><span>Antes / depois — caso 2</span></div>
+          <figcaption>[[Área tratada]] · [[nº de sessões]] · foto após [[X]] meses</figcaption>
+        </figure>
+      </div>
+      <p class="disclaimer">Imagens de pacientes reais, publicadas com autorização. Resultados variam de pessoa para pessoa.</p>
+    </div>
+  </section>
+
+  <!-- 7. DEPOIMENTOS — usar avaliações reais do Google -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Quem já passou por aqui</p>
+        <h2>O que dizem os pacientes</h2>
+        <p class="rating-badge"><span class="stars" aria-hidden="true">★★★★★</span> [[4,9]] de média em [[120]]+ avaliações no Google</p>
+      </div>
+      <div class="grid grid-3">
+        <figure class="testimonial">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <blockquote>[[Trecho real de avaliação do Google — prefira os que citam atenção, segurança e explicação clara.]]</blockquote>
+          <figcaption>[[Nome]] <span>· Google</span></figcaption>
+        </figure>
+        <figure class="testimonial">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <blockquote>[[Trecho real de avaliação do Google.]]</blockquote>
+          <figcaption>[[Nome]] <span>· Google</span></figcaption>
+        </figure>
+        <figure class="testimonial">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <blockquote>[[Trecho real de avaliação do Google.]]</blockquote>
+          <figcaption>[[Nome]] <span>· Google</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CTA INTERMEDIÁRIA -->
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Descubra se o [[Procedimento]] é para você</h2>
+        <p>A avaliação é o primeiro passo — e você decide depois, com calma.</p>
+      </div>
+      <a class="btn btn-wa btn-lg" data-cta="meio" target="_blank" rel="noopener"
+         href="https://wa.me/55DDDNUMERO?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+        Agendar pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- 9. PARA QUEM É / NÃO É — qualifica e gera confiança -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Indicação</p>
+        <h2>Este tratamento é para você se...</h2>
+      </div>
+      <div class="grid grid-2 fit">
+        <div class="fit-col fit-yes">
+          <h3>É indicado se você</h3>
+          <ul class="check-list">
+            <li>[[Perfil/queixa 1]]</li>
+            <li>[[Perfil/queixa 2]]</li>
+            <li>Quer um resultado que continue parecendo você</li>
+            <li>Valoriza ser acompanhado(a) por um(a) especialista</li>
+          </ul>
+        </div>
+        <div class="fit-col fit-no">
+          <h3>Pode não ser o ideal se você</h3>
+          <ul class="x-list">
+            <li>Busca uma mudança radical imediata</li>
+            <li>[[Contraindicação comum, ex.: gestantes]]</li>
+            <li>Procura apenas o menor preço, sem avaliação</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. SOBRE O(A) MÉDICO(A) -->
+  <section class="section section-alt">
+    <div class="container about">
+      <div class="img-slot img-portrait" role="img" aria-label="Retrato de [[Dr(a). Nome]]">
+        <span>Retrato 4:5<br>(olhando para a câmera)</span>
+      </div>
+      <div>
+        <p class="eyebrow">Quem vai cuidar de você</p>
+        <h2>[[Dr(a). Nome]]</h2>
+        <p>[[Parágrafo curto em 1ª pessoa: por que escolheu a especialidade e
+        como atende — escuta, honestidade, sem empurrar procedimentos.]]</p>
+        <ul class="about-facts">
+          <li>Formação em Medicina pela [[Universidade]] ([[ano]])</li>
+          <li>Residência em [[Especialidade]] no [[Hospital]]</li>
+          <li>Membro da [[Sociedade]]</li>
+          <li>CRM-[[UF]] [[000000]] · RQE [[0000]]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FAQ — quebra de objeções (details/summary funciona sem JS) -->
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2>Antes de agendar, você pode estar se perguntando</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Dói?</summary>
+          <p>[[Descreva a sensação com honestidade e as medidas de conforto usadas.]]</p>
+        </details>
+        <details>
+          <summary>Preciso me afastar da rotina?</summary>
+          <p>[[Tempo de recuperação e cuidados pós-procedimento.]]</p>
+        </details>
+        <details>
+          <summary>Quando vejo resultado e quanto tempo dura?</summary>
+          <p>[[Prazo médio para o resultado aparecer e durabilidade média, com a ressalva de que varia.]]</p>
+        </details>
+        <details>
+          <summary>Quanto custa?</summary>
+          <p>O valor depende das áreas e do protocolo indicado para o seu caso,
+          por isso é definido após a avaliação. Fale com a equipe pelo WhatsApp
+          para saber o valor da consulta e as formas de pagamento.</p>
+        </details>
+        <details>
+          <summary>Sou obrigado(a) a fazer o procedimento depois da consulta?</summary>
+          <p>Não. A consulta serve para você entender o seu caso e as opções.
+          A decisão é sempre sua, no seu tempo.</p>
+        </details>
+        <details>
+          <summary>Como faço para agendar?</summary>
+          <p>Clique em qualquer botão de WhatsApp desta página. A mensagem já
+          vai pronta — é só enviar, e a equipe responde em horário comercial.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. CTA FINAL + LOCALIZAÇÃO -->
+  <section class="cta-final" id="agendar">
+    <div class="container cta-final-inner">
+      <div>
+        <p class="eyebrow eyebrow-inverse">Próximo passo</p>
+        <h2>Agende sua avaliação e saia da consulta sabendo exatamente o que faz sentido para você.</h2>
+        <ul class="cta-points">
+          <li>Avaliação individual</li>
+          <li>Explicação clara, sem pressão</li>
+          <li>Agendamento rápido pelo WhatsApp</li>
+        </ul>
+        <a class="btn btn-wa btn-lg" data-cta="final" target="_blank" rel="noopener"
+           href="https://wa.me/55DDDNUMERO?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+          Agendar minha avaliação
+        </a>
+      </div>
+      <div class="location-card">
+        <h3>Onde atendemos</h3>
+        <address>[[Rua, número, sala]]<br>[[Bairro]] · [[Cidade]] - [[UF]]<br>CEP [[00000-000]]</address>
+        <p>[[Seg a sex, 8h às 18h]]</p>
+        <a class="link-arrow" data-cta="mapa" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/search/?api=1&amp;query=[[Endereco+completo]]">Ver rota no mapa →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>[[Dr(a). Nome]]</strong> · [[Especialidade]] · CRM-[[UF]] [[000000]] · RQE [[0000]]</p>
+    <p>[[Endereço completo]]</p>
+    <p class="footer-legal">Conteúdo informativo. Procedimentos são indicados exclusivamente após
+    avaliação médica individual, conforme o Código de Ética Médica e as normas do Conselho
+    Federal de Medicina. Resultados variam de pessoa para pessoa.</p>
+    <p class="footer-legal">&copy; <span id="year"></span> [[Dr(a). Nome]]</p>
+  </div>
+</footer>
+
+<!-- Barra fixa no mobile: CTA sempre a um toque -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <a class="btn btn-wa btn-block" data-cta="sticky-mobile" target="_blank" rel="noopener" tabindex="-1"
+     href="https://wa.me/55DDDNUMERO?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">
+    <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+    Agendar pelo WhatsApp
+  </a>
+</div>
+
+<!-- Botão flutuante no desktop -->
+<a class="wa-float" data-cta="float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"
+   href="https://wa.me/55DDDNUMERO?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">
+  <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38A9.96 9.96 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10Zm5.86 14.3c-.25.7-1.45 1.35-2 1.44-.53.08-1.2.11-1.93-.12-.44-.14-1.02-.34-1.75-.66-3.08-1.33-5.1-4.42-5.25-4.63-.15-.2-1.26-1.68-1.26-3.2 0-1.53.8-2.28 1.09-2.59.28-.31.62-.38.83-.38h.6c.19 0 .45-.07.7.54.25.61.86 2.1.94 2.25.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.26 1.64 2.05 1.13 1.01 2.08 1.32 2.38 1.47.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.24.66-.15.27.1 1.72.81 2.02.96.3.15.5.23.57.35.08.13.08.7-.17 1.4Z"/></symbol>
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>
