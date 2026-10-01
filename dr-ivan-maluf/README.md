@@ -4,7 +4,7 @@ Página única, conversão por WhatsApp (41) 3040-5777. Copy aprovada pelo clien
 
 ## Pendências antes de publicar
 - **Fotos**: hero e "Sobre" já aplicadas. Faltam 4–6 antes/depois (1:1) — trocar cada `<div class="img-slot">` por `<img>` em WebP.
-- **Depoimentos**: substituir os 3 cards `[[...]]` por avaliações reais do Google Meu Negócio.
+- **Depoimentos**: 3 avaliações reais do Google aplicadas.
 - **GTM**: descomentar o snippet no `<head>` e informar o ID.
 
 ## Identidade aplicada
