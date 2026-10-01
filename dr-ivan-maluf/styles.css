@@ -121,8 +121,13 @@ figure { margin: 0; }
 .brand-text small { font-size: .72rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* ---------- Hero ---------- */
-.hero { background: linear-gradient(180deg, var(--white) 0%, var(--sand) 100%); padding: 56px 0 0; }
-.hero-inner { display: grid; grid-template-columns: 1.25fr .75fr; gap: 56px; align-items: center; }
+.hero { position: relative; overflow: hidden; background: var(--white); padding: 48px 0 0; }
+.hero-inner { position: relative; min-height: 600px; display: flex; align-items: center; }
+.hero-copy { position: relative; z-index: 1; max-width: 560px; }
+/* Desktop: foto à direita, ancorada na base (o fundo branco da foto se funde ao hero) */
+.hero-media { position: absolute; top: 0; bottom: 0; right: -60px; width: 52%; z-index: 0; pointer-events: none; display: flex; align-items: flex-end; }
+.hero-media img { width: 100%; height: auto; max-height: 100%; object-fit: contain; object-position: right bottom; }
+.hero .seals { position: relative; z-index: 1; }
 .lead { font-size: 1.12rem; color: var(--muted); max-width: 38em; }
 .lead strong { color: var(--graphite); font-weight: 600; }
 .cta-block { margin-top: 30px; }
@@ -151,6 +156,7 @@ figure { margin: 0; }
 .img-portrait { aspect-ratio: 4 / 5; }
 .img-square { aspect-ratio: 1 / 1; }
 .img-slot img { width: 100%; height: 100%; object-fit: cover; }
+.about-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: var(--r-md); box-shadow: var(--shadow); }
 
 /* ---------- Seções ---------- */
 .section { padding: 96px 0; }
@@ -297,8 +303,11 @@ figure { margin: 0; }
 
 /* ---------- Responsivo ---------- */
 @media (max-width: 960px) {
-  .hero-inner, .about { grid-template-columns: 1fr; gap: 40px; }
-  .hero-media, .about .img-slot { max-width: 420px; width: 100%; margin: 0 auto; }
+  .about { grid-template-columns: 1fr; gap: 40px; }
+  .about-photo { max-width: 420px; width: 100%; margin: 0 auto; }
+  .hero-inner { display: block; min-height: 0; }
+  .hero-copy { max-width: none; }
+  .hero-media { position: static; width: auto; margin: 32px -20px 0; display: block; }
   .grid-3 { grid-template-columns: 1fr; }
   .seals { grid-template-columns: repeat(2, 1fr); }
   .seals li:nth-child(3) { border-left: 0; }
