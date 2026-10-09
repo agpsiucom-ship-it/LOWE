@@ -5,7 +5,7 @@ Página única, conversão por WhatsApp (41) 3040-5777. Copy aprovada pelo clien
 ## Pendências antes de publicar
 - **Fotos**: hero, "Sobre" e 5 casos de antes/depois aplicados.
 - **Depoimentos**: 3 avaliações reais do Google aplicadas.
-- **GTM**: descomentar o snippet no `<head>` e informar o ID.
+- **GTM**: GTM-57SLTMGS instalado (head + noscript no body).
 
 ## Identidade aplicada
 - Cores: `#805432` (CTAs), `#b0774b` (detalhes), `#404040` (texto e faixas escuras), `#ffffff`.
