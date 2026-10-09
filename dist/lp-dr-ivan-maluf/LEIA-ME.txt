@@ -1,0 +1,46 @@
+LP DR. IVAN MALUF JR. — COMO PUBLICAR
+=====================================
+
+CONTEÚDO DA PASTA
+  index.html    página (GTM-57SLTMGS já instalado)
+  styles.css    visual
+  script.js     barra fixa no celular, rastreamento de cliques e origem da campanha
+  assets/       fotos, logo e favicon
+
+Mantenha essa estrutura: index.html, styles.css e script.js na mesma pasta,
+e as imagens dentro de "assets".
+
+ANTES DE PUBLICAR
+  Em index.html, troque a linha
+    <meta property="og:image" content="assets/dr-ivan-retrato.webp">
+  pela URL completa, ex.: https://drivanmalufjr.com.br/lp/assets/dr-ivan-retrato.webp
+  (é a imagem que aparece ao compartilhar o link no WhatsApp/Facebook).
+
+ONDE SUBIR
+  Hostinger / Locaweb / cPanel (hospedagem comum)
+    Gerenciador de Arquivos > public_html > crie uma pasta (ex.: "rejuvenescimento")
+    > envie o .zip e use "Extrair". Endereço: seudominio.com.br/rejuvenescimento/
+
+  Netlify
+    app.netlify.com > Add new site > Deploy manually > arraste a pasta.
+
+  Vercel
+    vercel.com > Add New > Project > envie a pasta (sem configurações de build).
+
+  WordPress
+    Opção A (recomendada): envie a pasta por FTP/Gerenciador de Arquivos para
+    public_html/rejuvenescimento/ — fica fora do tema e carrega mais rápido.
+    Opção B: use o arquivo "lp-dr-ivan-maluf-arquivo-unico.html" com um plugin
+    de página HTML (ex.: "HTML Page Sync" ou similar) ou um modelo em branco.
+
+  Construtores que só aceitam um arquivo ou código colado
+    Use "lp-dr-ivan-maluf-arquivo-unico.html": CSS, JS e imagens já estão
+    embutidos nele. Evite colar dentro de um bloco HTML de página com tema/menu
+    próprio — o layout foi feito para ocupar a página inteira.
+
+DEPOIS DE PUBLICAR
+  1. Abra a página no celular e clique nos botões: devem abrir o WhatsApp
+     (41) 3040-5777 com a mensagem pronta.
+  2. No GTM (modo Preview), confira o evento "whatsapp_click" ao clicar.
+  3. Crie no GTM o acionador "Evento personalizado" = whatsapp_click e use-o
+     nas tags de conversão do Google Ads e do Meta.
