@@ -78,6 +78,8 @@ document.getElementById('ano').textContent = new Date().getFullYear();
       posts = (Array.isArray(data) ? data : data.posts || []).filter(imageOf);
       if (!posts.length) return;
       grid.innerHTML = '';
+      grid.classList.remove('insta__grid--embeds');
+      more.textContent = 'Carregar mais';
       render();
       more.addEventListener('click', (e) => {
         if (shown < posts.length) { e.preventDefault(); render(); }
