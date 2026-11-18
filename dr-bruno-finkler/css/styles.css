@@ -28,7 +28,7 @@ a { color: inherit; text-decoration: none; }
 .btn--sm { font-size: .8rem; padding: 6px 14px; border-radius: 4px; }
 .btn--red { background: var(--red); color: #fff; }
 .btn--blue { background: #1a8de0; color: #fff; }
-.btn--outline { border: 1.5px solid var(--red); color: var(--red); background: #fff; font-size: .9rem; padding: 8px 18px; font-weight: 500; }
+.btn--outline { border: 1.5px solid var(--red); color: var(--red); background: #fff; font-size: 1.05rem; padding: 10px 20px; font-weight: 700; box-shadow: 0 6px 14px rgba(0,0,0,.12); }
 .btn--outline:hover { background: var(--red); color: #fff; }
 
 .pill {
@@ -117,13 +117,13 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Footer ---------- */
 .footer { background: #fff; border-top: 1px solid #eee; padding-top: 60px; }
-.footer__inner { display: grid; grid-template-columns: 260px 1fr auto; gap: 50px; align-items: start; padding-bottom: 50px; }
-.footer__logo svg { width: 230px; height: 230px; }
-.footer__info h2 { color: var(--dark); font-size: 1.3rem; font-weight: 700; margin-bottom: 18px; }
+.footer__inner { display: grid; grid-template-columns: 300px 1fr auto; gap: 50px; align-items: start; padding-bottom: 50px; }
+.footer__logo img { width: 280px; }
+.footer__info h2 { color: #111; font-size: 1.6rem; font-weight: 700; margin-bottom: 18px; }
 .footer__unit { margin-bottom: 18px; font-size: .95rem; }
-.footer__unit strong { color: var(--dark); font-weight: 500; }
+.footer__unit strong { color: #666; font-weight: 700; }
 .footer__unit p { margin-top: 6px; }
-.footer__unit a { color: var(--dark); font-weight: 700; }
+.footer__unit a { color: #666; font-weight: 700; }
 .footer__actions { display: flex; flex-direction: column; gap: 14px; }
 .footer__bottom { background: var(--wine); color: #f3d6d6; font-size: .8rem; padding: 14px 0; text-align: center; }
 
@@ -176,7 +176,7 @@ a { color: inherit; text-decoration: none; }
   .insta__grid { grid-template-columns: repeat(2, 1fr); }
 
   .footer__inner { grid-template-columns: 1fr; text-align: center; gap: 30px; }
-  .footer__logo svg { width: 150px; height: 150px; margin: 0 auto; }
+  .footer__logo img { width: 180px; margin: 0 auto; }
   .footer__actions { align-items: center; }
 
   .whats-float { font-size: 1rem; padding: 10px 14px; }
