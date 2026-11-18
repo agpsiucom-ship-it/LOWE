@@ -112,7 +112,13 @@ a { color: inherit; text-decoration: none; }
 .insta__head span { font-size: .8rem; }
 .insta__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
 .insta__item { aspect-ratio: 1; background: linear-gradient(135deg, #f3f3f3, #e6e6e6); position: relative; }
-.insta__item::after { content: "@brunofinkler_arritmias"; position: absolute; inset: 0; display: grid; place-items: center; color: #bbb; font-size: .75rem; }
+.insta__item:not(.has-media)::after { content: "@brunofinkler_arritmias"; position: absolute; inset: 0; display: grid; place-items: center; color: #bbb; font-size: .75rem; }
+.insta__item { overflow: hidden; }
+.insta__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s; }
+.insta__item:hover img { transform: scale(1.05); }
+.insta__item .insta__badge { position: absolute; top: 8px; right: 8px; width: 22px; height: 22px; fill: #fff; filter: drop-shadow(0 1px 2px rgba(0,0,0,.5)); }
+.insta__item .insta__cap { position: absolute; inset: 0; background: rgba(122,21,24,.85); color: #fff; font-size: .85rem; padding: 14px; opacity: 0; transition: opacity .25s; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; overflow: hidden; }
+.insta__item:hover .insta__cap, .insta__item:focus-visible .insta__cap { opacity: 1; }
 .insta__actions { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
 
 /* ---------- Footer ---------- */
@@ -181,3 +187,4 @@ a { color: inherit; text-decoration: none; }
 
   .whats-float { font-size: 1rem; padding: 10px 14px; }
 }
+[hidden] { display: none !important; }

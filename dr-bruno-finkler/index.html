@@ -185,7 +185,13 @@
 </section>
 
 <!-- ============ INSTAGRAM ============ -->
-<section class="insta">
+<!--
+  FEED DO INSTAGRAM
+  1. Crie uma conta grátis em behold.so e conecte o Instagram @brunofinkler_arritmias.
+  2. Crie um feed do tipo "JSON" e copie a URL do feed (ex.: https://feeds.behold.so/XXXXXXXX).
+  3. Cole a URL no atributo data-feed-url abaixo. Sem URL, a seção mostra quadros que levam ao perfil.
+-->
+<section class="insta" data-feed-url="" data-profile="https://www.instagram.com/brunofinkler_arritmias/">
   <div class="container">
     <div class="insta__head">
       <img src="assets/logo-mark.png" alt="" width="56" height="58">
@@ -206,7 +212,7 @@
       <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="insta__item"></a>
     </div>
     <div class="insta__actions">
-      <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="btn btn--sm btn--red">Carregar mais</a>
+      <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="btn btn--sm btn--red" id="insta-more">Carregar mais</a>
       <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="btn btn--sm btn--blue">Me siga no Instagram</a>
     </div>
   </div>

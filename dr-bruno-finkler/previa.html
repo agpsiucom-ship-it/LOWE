@@ -130,7 +130,13 @@ a { color: inherit; text-decoration: none; }
 .insta__head span { font-size: .8rem; }
 .insta__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
 .insta__item { aspect-ratio: 1; background: linear-gradient(135deg, #f3f3f3, #e6e6e6); position: relative; }
-.insta__item::after { content: "@brunofinkler_arritmias"; position: absolute; inset: 0; display: grid; place-items: center; color: #bbb; font-size: .75rem; }
+.insta__item:not(.has-media)::after { content: "@brunofinkler_arritmias"; position: absolute; inset: 0; display: grid; place-items: center; color: #bbb; font-size: .75rem; }
+.insta__item { overflow: hidden; }
+.insta__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s; }
+.insta__item:hover img { transform: scale(1.05); }
+.insta__item .insta__badge { position: absolute; top: 8px; right: 8px; width: 22px; height: 22px; fill: #fff; filter: drop-shadow(0 1px 2px rgba(0,0,0,.5)); }
+.insta__item .insta__cap { position: absolute; inset: 0; background: rgba(122,21,24,.85); color: #fff; font-size: .85rem; padding: 14px; opacity: 0; transition: opacity .25s; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; overflow: hidden; }
+.insta__item:hover .insta__cap, .insta__item:focus-visible .insta__cap { opacity: 1; }
 .insta__actions { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
 
 /* ---------- Footer ---------- */
@@ -199,6 +205,7 @@ a { color: inherit; text-decoration: none; }
 
   .whats-float { font-size: 1rem; padding: 10px 14px; }
 }
+[hidden] { display: none !important; }
 </style>
 
 <script type="application/ld+json">
@@ -368,7 +375,13 @@ a { color: inherit; text-decoration: none; }
 </section>
 
 <!-- ============ INSTAGRAM ============ -->
-<section class="insta">
+<!--
+  FEED DO INSTAGRAM
+  1. Crie uma conta grátis em behold.so e conecte o Instagram @brunofinkler_arritmias.
+  2. Crie um feed do tipo "JSON" e copie a URL do feed (ex.: https://feeds.behold.so/XXXXXXXX).
+  3. Cole a URL no atributo data-feed-url abaixo. Sem URL, a seção mostra quadros que levam ao perfil.
+-->
+<section class="insta" data-feed-url="" data-profile="https://www.instagram.com/brunofinkler_arritmias/">
   <div class="container">
     <div class="insta__head">
       <img src="data:image/png;base64,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" alt="" width="56" height="58">
@@ -389,7 +402,7 @@ a { color: inherit; text-decoration: none; }
       <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="insta__item"></a>
     </div>
     <div class="insta__actions">
-      <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="btn btn--sm btn--red">Carregar mais</a>
+      <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="btn btn--sm btn--red" id="insta-more">Carregar mais</a>
       <a href="https://www.instagram.com/brunofinkler_arritmias/" target="_blank" rel="noopener" class="btn btn--sm btn--blue">Me siga no Instagram</a>
     </div>
   </div>
@@ -452,6 +465,75 @@ nav.querySelectorAll('a').forEach((link) =>
 
 // Ano no rodapé
 document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Feed do Instagram (via Behold — ver comentário no HTML)
+(function () {
+  const section = document.querySelector('.insta');
+  if (!section) return;
+  const url = section.dataset.feedUrl;
+  if (!url) return; // sem feed configurado: mantém os quadros que levam ao perfil
+
+  const grid = section.querySelector('.insta__grid');
+  const more = document.getElementById('insta-more');
+  const PAGE = 8;
+  let posts = [];
+  let shown = 0;
+
+  const ICONS = {
+    VIDEO: '<path d="M8 5v14l11-7z"/>',
+    CAROUSEL_ALBUM: '<path d="M4 7h11v11H4z" opacity=".7"/><path d="M8 3h12v12H8z"/>',
+  };
+
+  const imageOf = (p) =>
+    (p.sizes && (p.sizes.medium || p.sizes.small || p.sizes.large || {}).mediaUrl) ||
+    (p.mediaType === 'VIDEO' ? p.thumbnailUrl : p.mediaUrl) ||
+    p.thumbnailUrl || p.mediaUrl;
+
+  function card(p) {
+    const a = document.createElement('a');
+    a.className = 'insta__item has-media';
+    a.href = p.permalink || section.dataset.profile;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    const caption = (p.prunedCaption || p.caption || '').trim();
+
+    const img = document.createElement('img');
+    img.src = imageOf(p);
+    img.alt = caption ? caption.slice(0, 120) : 'Publicação do Instagram do Dr. Bruno Finkler';
+    img.loading = 'lazy';
+    a.appendChild(img);
+
+    if (ICONS[p.mediaType]) {
+      a.insertAdjacentHTML('beforeend', `<svg class="insta__badge" viewBox="0 0 24 24" aria-hidden="true">${ICONS[p.mediaType]}</svg>`);
+    }
+    if (caption) {
+      const cap = document.createElement('span');
+      cap.className = 'insta__cap';
+      cap.textContent = caption;
+      a.appendChild(cap);
+    }
+    return a;
+  }
+
+  function render() {
+    posts.slice(shown, shown + PAGE).forEach((p) => grid.appendChild(card(p)));
+    shown = Math.min(shown + PAGE, posts.length);
+    if (shown >= posts.length) more.hidden = true;
+  }
+
+  fetch(url)
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((data) => {
+      posts = (Array.isArray(data) ? data : data.posts || []).filter(imageOf);
+      if (!posts.length) return;
+      grid.innerHTML = '';
+      render();
+      more.addEventListener('click', (e) => {
+        if (shown < posts.length) { e.preventDefault(); render(); }
+      });
+    })
+    .catch(() => { /* falhou: mantém os quadros que levam ao perfil */ });
+})();
 </script>
 </body>
 </html>
